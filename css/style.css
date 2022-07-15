@@ -1,61 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
-
-body{
-
-    background: linear-gradient(90deg,#23C4ED 0%, #5A20CB 100%  );
+body {
+    background: linear-gradient(90deg, #23C4ED 0%, #5A20CB 100%);
 }
-h1{
+
+h1 {
     text-align: center;
     font-family: "Montserrat";
     font-size: 40px;
     margin-top: 15%;
     color: #fafafa;
     letter-spacing: 2px;
-
 }
-span{
+
+span {
     font-weight: 800;
     font-size: 90px;
     color: rgba(164, 166, 252, 0.85);
 }
 
-p{
+p {
     text-align: center;
     font-size: 25px;
     letter-spacing: 1px;
-    color:burlywood;
+    color: burlywood;
 }
 
-button{
+button {
     margin: auto;
     display: block;
     margin-top: 70px;
-    
 }
-.btn{
+
+.btn {
     background: transparent;
-    color:#1f1f1f;
+    color: #1f1f1f;
     border: 2px solid #1f1f1f;
     border-radius: 10px;
     padding: 1.2rem 2.3rem;
     letter-spacing: 1px;
     font-size: 20px;
-    cursor:grab;
+    cursor: grab;
     font-weight: 800;
 }
-.btn:hover{
+
+.btn:hover {
     color: #fff;
     outline: 0;
 }
-.lco{
+
+.lco {
     transition: box-shadow 600ms ease-in-out;
-
 }
-.lco:hover{
+
+.lco:hover {
     box-shadow: 0 0 40px 40px #1f1f1f inset;
-
 }
-.footer{
+
+.footer {
     background: #1f1f1f;
     color: #fff;
     width: 100%;
@@ -68,6 +69,39 @@ button{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-
-    
 }
+
+
+/* 0 to 800 = green
+ */
+
+@media screen and (max-width: 800px) {
+    body {
+        background: rgb(3, 66, 45);
+    }
+    h1 {
+        font-size: 40px;
+    }
+    span {
+        font-size: 60px;
+    }
+}
+
+
+/* 400 to 600 = pink
+ */
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    body {
+        background: rgb(172, 12, 151);
+    }
+    h1 {
+        font-size: 40px;
+    }
+    span {
+        font-size: 60px;
+    }
+}
+
+
+/* big screen blue */
